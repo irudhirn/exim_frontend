@@ -1,0 +1,261 @@
+.section {
+  width: 100%;
+}
+
+.element {
+  width: 100%;
+}
+.element:nth-of-type(2n) {
+  background-color: rgb(231, 231, 231);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.element:nth-of-type(2n) > .container {
+  flex-direction: row-reverse;
+}
+
+.container > * {
+  flex: 1;
+}
+
+.elementImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elementImg > .img {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  padding-top: 30px;
+}
+
+.textHeading {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.textDesc {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+
+.highlight {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(45, 115, 117);
+}
+
+.cardContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.cards {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.card {
+  width: 375px;
+  height: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.card1 {
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 6px solid rgb(45, 115, 117);
+}
+
+.card2 {
+  top: 50%;
+  left: 12%;
+  transform: translateY(-52%);
+  border-left: 6px solid rgb(45, 115, 117);
+}
+
+.card3 {
+  top: 50%;
+  right: 12%;
+  transform: translateY(-52%);
+  border-right: 6px solid rgb(45, 115, 117);
+}
+
+.card4 {
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 6px solid rgb(45, 115, 117);
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: rgb(45, 115, 117);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.cardDesc {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (max-width: 1300px) {
+  .card2 {
+    left: 10%;
+  }
+
+  .card3 {
+    right: 10%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardContainer {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .cardContainer {
+    padding: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    width: 768px;
+  }
+  .element:nth-of-type(2n) > .container {
+    flex-direction: column;
+  }
+  .textHeading {
+    text-align: center;
+  }
+  .textDesc {
+    text-align: center;
+  }
+  .cardContainer {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    gap: 60px;
+    height: auto;
+    padding: 0 50px;
+    width: auto;
+  }
+  .card {
+    position: relative;
+    margin: 0 auto;
+  }
+  .card1 {
+    top: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    border-top: 6px solid rgb(45, 115, 117);
+  }
+
+  .card2 {
+    top: 0%;
+    left: 0%;
+    transform: translateY(0%);
+    border-left: none;
+    border-top: 6px solid rgb(45, 115, 117);
+  }
+
+  .card3 {
+    top: 0%;
+    right: 0%;
+    transform: translateY(0%);
+    border-right: none;
+    border-top: 6px solid rgb(45, 115, 117);
+  }
+
+  .card4 {
+    bottom: 0%;
+    left: 0%;
+    transform: translateX(0%);
+    border-bottom: none;
+    border-top: 6px solid rgb(45, 115, 117);
+  }
+}
+
+@media (max-width: 900px) {
+  .cards {
+    padding: 0px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 840px) {
+  .container {
+    width: 640px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 100%);
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 576px;
+  }
+  .textHeading {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 425px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 325px;
+  }
+  .textHeading {
+    font-size: 22px;
+  }
+  .card {
+    width: 325px;
+  }
+}

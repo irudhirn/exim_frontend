@@ -1,0 +1,95 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 25px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.jobs {
+  list-style-type: none;
+  margin-bottom: 60px;
+}
+
+.job {
+  display: flex;
+  flex-direction: column;
+}
+.job > h5 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  margin-bottom: 15px;
+}
+.job > p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: var(--color8);
+}
+
+.job > p:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.job:not(:last-of-type) {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px dashed var(--color8);
+}
+
+.email > p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: var(--color8);
+}
+
+.email > p > a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .title {
+    font-size: 26px;
+  }
+
+  .jobs {
+    width: 325px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .job > h5 {
+    font-size: 18px;
+  }
+
+  .email {
+    width: 325px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,167 @@
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  scroll-behavior: none;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.productsContainer {
+  z-index: 35;
+  position: fixed;
+  width: 1080px;
+  height: 540px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.imgBox {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mainImg {
+  width: 100%;
+  height: auto;
+}
+
+.products {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.product {
+  width: 100%;
+  background-color: #fff;
+}
+
+.relatedImgBox {
+  padding: 0 25px;
+  width: 100%;
+  height: auto;
+}
+
+.relatedImg {
+  width: 100%;
+  height: auto;
+}
+
+.descBox {
+  padding: 30px;
+}
+
+.closeBtn {
+  font-size: 24px;
+  padding: 0 5px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.descTitle {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  color: var(--color35);
+}
+
+.descText {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #464646;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1200px) {
+  .productsContainer {
+    width: 840px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 992px) {
+  .productsContainer {
+    width: 768px;
+    height: 389px;
+  }
+}
+
+@media (max-width: 840px) {
+  .productsContainer {
+    width: 640px;
+    height: 320px;
+  }
+  .descTitle {
+    font-size: 20px;
+  }
+  .descText {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productsContainer {
+    width: 500px;
+    height: 420px;
+    flex-direction: column;
+  }
+  .imgBox {
+    width: 100%;
+    height: 80%;
+    text-align: center;
+  }
+  .mainImg {
+    height: 100%;
+    width: auto;
+  }
+  .products {
+    width: 100%;
+    height: 20%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+  }
+  .product {
+    flex-direction: column;
+  }
+  .relatedImgBox {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .productsContainer {
+    width: 425px;
+    height: 375px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .productsContainer {
+    width: 325px;
+    height: 300px;
+    flex-direction: column;
+  }
+}

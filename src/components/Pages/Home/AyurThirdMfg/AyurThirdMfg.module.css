@@ -1,0 +1,318 @@
+.section {
+  width: 100%;
+  /* height: 400px; */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1611255942860-3cb71f28e61d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1557&q=80"); */
+  /* background-image: url("../../../../resources/images/ayur-third-party-mfg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; */
+  /* margin-bottom: 150px; */
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto 0px;
+  padding: 50px 0px;
+  transform: translateY(-100px);
+  background-color: #fff;
+  /* border: 1px solid #000; */
+}
+
+.sectionHeadingBorder {
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto 0px;
+}
+
+.sectionHeading {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color35);
+  margin: 0px 0 50px;
+  padding-top: 150px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  transition: transform 1s ease, opacity 0.5s ease;
+  transition-delay: 0.3s;
+}
+.sectionHeading.hidden {
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+.testimonialContainer {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 30px 0;
+  width: 1280px;
+  /* width: 1200px; */
+  margin: 0 auto;
+  overflow: hidden;
+  /* border: 1px solid green; */
+}
+
+.products {
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* border: 1px solid red; */
+  animation-name: slider;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.testimonialContainer:hover .products {
+  animation-name: slider;
+  animation-play-state: paused;
+}
+
+.product {
+  width: 300px;
+  flex-shrink: 0;
+  /* border: 1px solid blue; */
+  margin: 0 10px;
+}
+.product > a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product > a > .imgBox {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+  transition: transform 1s ease;
+}
+.product.inActive > a > .imgBox {
+  transform: scale(0.1);
+}
+.product > a > .imgBox .img {
+  width: 100%;
+  height: auto;
+  transition: width 0.2s ease;
+}
+.product > a:hover > .imgBox .img {
+  width: 105%;
+}
+
+.readBtnBox {
+  width: 100%;
+}
+.readBtn {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.product > p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.product > p:not(:first-of-type) {
+  text-align: center;
+}
+
+.name {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.name {
+  font-size: 17px;
+  font-weight: 400;
+  color: gray;
+}
+
+.readBtn {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.readBtn:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: transparent;
+  outline: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 15px 22px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  position: absolute;
+  z-index: 25;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  border: 1px solid lightgrey;
+  background-color: lightgrey;
+}
+
+.next {
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 1600px) {
+  .container {
+    transform: translateY(-50px);
+  }
+}
+@media (max-width: 1300px) {
+  .testimonialContainer {
+    width: 960px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    transform: translateY(0px);
+  }
+  .next {
+    right: 50px;
+  }
+  .prev {
+    left: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sectionHeading {
+    font-size: 34px;
+  }
+  .testimonialContainer {
+    width: 640px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeading {
+    font-size: 24px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 0;
+  }
+  .sectionHeading {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .container {
+    /* transform: translateY(10%); */
+    padding: 0px 25px 0px;
+    border-bottom: 1px solid lightgray;
+  }
+  .sectionHeadingBorder {
+    margin-bottom: 50px;
+  }
+  .testimonialContainer {
+    width: 320px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(-320px);
+    transition: none;
+    transition-delay: 4s;
+  }
+  14% {
+    transform: translateX(-320px);
+    transition: none;
+    transition-delay: 4s;
+  }
+  16.66% {
+    transform: translateX(-640px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  31% {
+    transform: translateX(-640px);
+    /* transition: all 0.75s ease; */
+    transition-delay: 4s;
+  }
+  33.33% {
+    transform: translateX(-960px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  47% {
+    transform: translateX(-960px);
+    /* transition: all 0.75s ease; */
+    transition-delay: 4s;
+  }
+  50% {
+    transform: translateX(-1280px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  64% {
+    transform: translateX(-1280px);
+    /* transition: all 0.75s ease; */
+    transition-delay: 4s;
+  }
+  66.66% {
+    transform: translateX(-1600px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  81% {
+    transform: translateX(-1600px);
+    /* transition: all 0.75s ease; */
+    transition-delay: 4s;
+  }
+  83.33% {
+    transform: translateX(-1920px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  97% {
+    transform: translateX(-1920px);
+    /* transition: all 0.75s ease; */
+    transition-delay: 4s;
+  }
+  100% {
+    transform: translateX(-2240px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+}

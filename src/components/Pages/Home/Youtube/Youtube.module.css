@@ -1,0 +1,422 @@
+.section {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1611255942860-3cb71f28e61d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1557&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  /* max-width: 1024px; */
+  width: 1200px;
+  margin: 0 auto 0px;
+  padding: 25px 0px;
+  background-color: #fff;
+}
+
+.sectionHeadingBorder {
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 auto 50px;
+}
+
+.sectionHeading {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color35);
+  margin: 0px 0 40px;
+  padding-top: 0px;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  transition: transform 1s ease, opacity 0.5s ease;
+  transition-delay: 0.3s;
+}
+.sectionHeading.hidden {
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+.testimonialContainer {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 30px 0;
+  /* width: 960px; */
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* border: 1px solid green; */
+}
+
+.products {
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* border: 1px solid red; */
+  animation-name: sliderBigScreen;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.testimonialContainer:hover .products {
+  animation-name: sliderBigScreen;
+  animation-play-state: paused;
+}
+
+.product {
+  /* width: 300px; */
+  width: 380px;
+  flex-shrink: 0;
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  position: relative;
+  cursor: pointer;
+}
+
+.product > .imgBox {
+  /* width: 300px; */
+  width: 380px;
+  /* height: 160px; */
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: transform 1s ease;
+}
+.product.inActive > .imgBox {
+  transform: scale(0.1);
+}
+.product > .imgBox .img {
+  width: 100%;
+  transition: width 0.2s ease;
+  transform: scale(1.25);
+}
+.product:hover > .imgBox .img {
+  width: 105%;
+}
+
+.youtubePlayBtn {
+  height: 60px;
+  width: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+}
+
+.readBtnBox {
+  width: 100%;
+}
+.readBtn {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.product > p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.product > p:not(:first-of-type) {
+  text-align: center;
+}
+
+.name {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.name {
+  font-size: 17px;
+  font-weight: 400;
+  color: gray;
+}
+
+.readBtn {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.readBtn:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  border-radius: 50px;
+  background-color: transparent;
+  outline: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 15px 22px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  position: absolute;
+  z-index: 25;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  border: 1px solid lightgrey;
+  background-color: lightgrey;
+}
+
+.next {
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1250px) {
+  .container {
+    width: 992px;
+  }
+  .testimonialContainer {
+    width: 800px;
+  }
+}
+@media (max-width: 1200px) {
+  .next {
+    right: 50px;
+  }
+  .prev {
+    left: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 840px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sectionHeading {
+    font-size: 34px;
+  }
+  /* .testimonialContainer {
+    width: 640px;
+  } */
+}
+@media (max-width: 860px) {
+  .container {
+    width: 420px;
+  }
+  .testimonialContainer {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeading {
+    font-size: 24px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .sectionHeading {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .container {
+    width: 350px;
+    padding: 0px 0px 0px;
+  }
+  .sectionHeadingBorder {
+    margin-bottom: 50px;
+  }
+  .products {
+    /* border: 1px solid red; */
+    animation-name: sliderSmallScreen;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .product {
+    width: 300px;
+  }
+  .product > .imgBox {
+    width: 300px;
+  }
+  .product > .imgBox .img {
+    transform: scale(1.55);
+  }
+  .testimonialContainer {
+    width: 320px;
+  }
+  .name {
+    font-size: 16px;
+  }
+}
+
+@keyframes sliderBigScreen {
+  0% {
+    /* transform: translateX(-320px); */
+    transform: translateX(-400px);
+    transition: none;
+    transition-delay: 4s;
+  }
+  14% {
+    /* transform: translateX(-320px); */
+    transform: translateX(-400px);
+    transition: none;
+    transition-delay: 4s;
+  }
+  16.66% {
+    /* transform: translateX(-640px); */
+    transform: translateX(-800px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  31% {
+    /* transform: translateX(-640px); */
+    transform: translateX(-800px);
+    transition-delay: 4s;
+  }
+  33.33% {
+    /* transform: translateX(-960px); */
+    transform: translateX(-1200px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  47% {
+    /* transform: translateX(-960px); */
+    transform: translateX(-1200px);
+    transition-delay: 4s;
+  }
+  50% {
+    /* transform: translateX(-1280px); */
+    transform: translateX(-1600px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  64% {
+    /* transform: translateX(-1280px); */
+    transform: translateX(-1600px);
+    transition-delay: 4s;
+  }
+  66.66% {
+    /* transform: translateX(-1600px); */
+    transform: translateX(-2000px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  81% {
+    /* transform: translateX(-1600px); */
+    transform: translateX(-2000px);
+    transition-delay: 4s;
+  }
+  83.33% {
+    /* transform: translateX(-1920px); */
+    transform: translateX(-2400px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  97% {
+    /* transform: translateX(-1920px); */
+    transform: translateX(-2400px);
+    transition-delay: 4s;
+  }
+  100% {
+    /* transform: translateX(-2240px); */
+    transform: translateX(-2800px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+}
+
+@keyframes sliderSmallScreen {
+  0% {
+    transform: translateX(-320px);
+    transition: none;
+    transition-delay: 4s;
+  }
+  14% {
+    transform: translateX(-320px);
+    transition: none;
+    transition-delay: 4s;
+  }
+  16.66% {
+    transform: translateX(-640px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  31% {
+    transform: translateX(-640px);
+    transition-delay: 4s;
+  }
+  33.33% {
+    transform: translateX(-960px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  47% {
+    transform: translateX(-960px);
+    transition-delay: 4s;
+  }
+  50% {
+    transform: translateX(-1280px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  64% {
+    transform: translateX(-1280px);
+    transition-delay: 4s;
+  }
+  66.66% {
+    transform: translateX(-1600px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  81% {
+    transform: translateX(-1600px);
+    transition-delay: 4s;
+  }
+  83.33% {
+    transform: translateX(-1920px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+  97% {
+    transform: translateX(-1920px);
+    transition-delay: 4s;
+  }
+  100% {
+    transform: translateX(-2240px);
+    transition: all 0.75s ease;
+    transition-delay: 4s;
+  }
+}

@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* matching gradient */
+  --color1: #dd8500;
+  --color2: #a78c00;
+  --color3: #6d8c00;
+  --color4: #268720;
+  --color5: #007e43;
+  --color6: #007360;
+
+  /* classy palette */
+  --color7: #dd8500;
+  --color8: #524438;
+  --color9: #b9a89a;
+  --color10: #00b568;
+  --color11: #007e37;
+
+  /* matching palette 2 */
+  --color12: #dd8500;
+  --color13: #524438;
+  --color14: #b9a89a;
+  --color15: #00b79c;
+  --color16: #008069;
+
+  /* dotting palette */
+  --color17: #dd8500;
+  --color18: #b9a89a;
+  --color19: #00b568;
+  --color20: #9cb0a4;
+
+  /* dust palette */
+  --color21: #dd8500;
+  --color22: #524438;
+  --color23: #b9a89a;
+  --color24: #00b568;
+
+  /* collective */
+  --color25: #dd8500;
+  --color26: #b69800;
+  --color27: #00b85e;
+
+  /* friend palette */
+  --color28: #dd8500;
+  --color29: #793300;
+  --color30: #006b5f;
+  --color31: #62baac;
+
+  /* pin palette */
+  --color32: #dd8500;
+  --color33: #61401a;
+  --color34: #dfe0df;
+  --color35: #005247;
+
+  --color36: #0a472e;
+  --color37: #7eae00;
+  --color38: #fcf4eb;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.05); */
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  min-width: 375px;
+  max-width: 1440px;
+  padding: 100px 0;
+  margin: 0 auto;
+}

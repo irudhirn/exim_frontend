@@ -1,0 +1,60 @@
+.section {
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color35);
+  margin-bottom: 15px;
+}
+
+.categories {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.category.active {
+  color: var(--color35);
+}
+
+.rightIcon {
+  margin-right: 10px;
+  color: var(--color35);
+}
+
+.category > a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+}
+.category.active > a {
+  color: var(--color35);
+  font-weight: 600;
+}
+
+.category > a:hover {
+  color: var(--color27);
+}

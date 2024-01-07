@@ -1,0 +1,144 @@
+.navLinks {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks__list {
+  /* width: 750px; */
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navLinks__list--item {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkBtn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.linkBtn:hover {
+  cursor: pointer;
+}
+
+.linkIconSpan {
+  margin-left: 10px;
+}
+
+.linkTxt {
+  /* font-size: 18px; */
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+  color: var(--color35);
+}
+
+.navBtn {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding: 15px 30px;
+  margin-left: 50px;
+  background-color: var(--yellow-text-btn-bg-color);
+  border: none;
+  border-radius: 7px;
+  transition: all 0.2s ease;
+  border: 2px solid var(--yellow-text-btn-bg-color);
+}
+
+.navBtn:hover {
+  cursor: pointer;
+  border: 2px solid var(--yellow-text-btn-bg-color);
+  background-color: transparent;
+}
+
+.navBtn:active {
+  scale: 0.97;
+}
+
+.menu {
+  z-index: 6;
+  position: absolute;
+  background-color: var(--white-text-color);
+  padding: 20px;
+  width: auto;
+  border-radius: 4px;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  top: 90px;
+}
+
+.menuList {
+  width: auto;
+}
+
+.menuListItem {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: var(--black-text-bg-color);
+  transition: all 0.2s ease;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.menuListItem:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1300px) {
+  .navLinks__list {
+    width: 800px;
+  }
+
+  .linkTxt {
+    font-size: 16px;
+  }
+
+  .navBtn {
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1250px) {
+  .navLinks__list {
+    width: 750px;
+  }
+  .linkTxt {
+    font-size: 15px;
+  }
+  .navBtn {
+    margin-left: 25px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 1250px) {
+  .navLinks__list {
+    width: 700px;
+  }
+}
+@media (max-width: 1100px) {
+  .navLinks {
+    display: none;
+  }
+}

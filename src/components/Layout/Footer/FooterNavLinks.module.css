@@ -1,0 +1,93 @@
+.navLinks {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLinks__list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.navLinks__list--item {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navLinks__list--item:not(:first-of-type) {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 2px solid #fff;
+}
+
+.linkBtn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkBtn:hover {
+  cursor: pointer;
+}
+
+.linkIconSpan {
+  margin-left: 10px;
+}
+
+.linkTxt {
+  font-size: 15px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1300px) {
+  .linkTxt {
+    font-size: 16px;
+  }
+
+  .navBtn {
+    margin-left: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1250px) {
+  .linkTxt {
+    font-size: 15px;
+  }
+  .navBtn {
+    margin-left: 25px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navLinks__list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .navLinks__list--item:not(:first-of-type) {
+    padding-left: 0px;
+    margin-left: 0px;
+    border-left: none;
+  }
+  .navLinks__list--item:not(:last-of-type) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

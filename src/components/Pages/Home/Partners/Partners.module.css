@@ -1,0 +1,107 @@
+.section {
+  width: 100%;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: rotateZ(35deg);
+    transform-origin: top;
+  }
+  20% {
+    transform: rotateZ(-25deg);
+    transform-origin: top;
+  }
+  40% {
+    transform: rotateZ(20deg);
+    transform-origin: top;
+  }
+  60% {
+    transform: rotateZ(-15deg);
+    transform-origin: top;
+  }
+  80% {
+    transform: rotateZ(5deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    transform-origin: top;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 30px 30px;
+}
+.container.oscillate {
+  animation-name: oscillate;
+  -webkit-animation-name: oscillate;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+.sectionHeadingBorder {
+  width: 100px;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto 50px;
+}
+
+.sectionHeading {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0 0 50px;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 0 50px;
+}
+
+.partner > a {
+  display: inline-block;
+  width: 100%;
+}
+.partner > a > img {
+  width: 100%;
+  height: auto;
+}
+.partner > a > img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .partners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sectionHeading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .partners {
+    grid-template-columns: repeat(1, 250px);
+    justify-content: center;
+    padding: 0px;
+  }
+  .partner {
+    margin: 0 auto;
+  }
+  .sectionHeading {
+    font-size: 24px;
+  }
+}

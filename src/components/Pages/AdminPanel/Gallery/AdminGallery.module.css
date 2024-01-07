@@ -1,0 +1,188 @@
+.section {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0px 25px 0px;
+  margin: 0 auto;
+}
+
+.galleryHeader {
+  padding: 15px;
+  background-color: var(--color35);
+  /* margin: 0 auto 20px; */
+  margin-bottom: 20px;
+  width: 768px;
+}
+.galleryHeader:hover {
+  cursor: pointer;
+}
+.galleryHeaderText {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galleryContent {
+  width: 768px;
+  /* margin: 0 auto; */
+}
+.galleryContent.inactive {
+  height: 0;
+  overflow: hidden;
+}
+
+.event:not(:last-of-type) {
+  margin-bottom: 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.label {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.label > input {
+  flex: 1;
+  height: 40px;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+}
+.label > .textarea {
+  flex: 1;
+  width: 450px;
+  min-height: 100px;
+  height: 200px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.fileInput::-webkit-file-upload-button {
+  height: 40px;
+  background-color: var(--color6);
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+.fileInput::file-selector-button {
+  height: 40px;
+  background-color: var(--color6);
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.labelText {
+  width: 100px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 0.5px solid var(--color35);
+  background-color: var(--color35);
+  color: #fff;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color27);
+  color: var(--color35);
+  font-weight: 600;
+}
+
+.addEvent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.addEventBtn {
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 0.5px solid var(--color35);
+  background-color: var(--color35);
+  color: #fff;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.addEventBtn:hover {
+  cursor: pointer;
+  background-color: var(--color27);
+  color: var(--color35);
+  font-weight: 600;
+}
+
+@media (max-width: 840px) {
+  .galleryHeader {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .galleryContent {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .form {
+    align-items: stretch;
+  }
+  .label {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .labelText {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .label > input {
+    flex: none;
+    height: 40px;
+    width: 100%;
+  }
+  .label > .textarea {
+    flex: none;
+    width: 100%;
+  }
+}

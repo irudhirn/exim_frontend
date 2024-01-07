@@ -1,0 +1,156 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 100px;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.brand:last-of-type {
+  flex-direction: row-reverse;
+}
+
+.brand:not(:last-of-type) {
+  margin-bottom: 70px;
+}
+.brandDesc,
+.brandImg {
+  flex: 1;
+}
+
+.brandImg {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brandImg > img {
+  /* height: 100%;
+  width: auto; */
+  width: 100%;
+  height: auto;
+}
+
+.brandDesc {
+  padding-top: 50px;
+}
+
+.brandDesc * {
+  font-family: "Roboto", sans-serif;
+}
+
+.brandDesc > h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.brandDesc > span {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.brandDesc > span > h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.brandDesc > span > p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.startBrand > .startBrandText {
+  font-family: "Roboto", sans-serif;
+}
+.startBrand > .startBrandText > .startBrandBtn {
+  display: inline-block;
+  border: 1px solid orange;
+  background-color: orange;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.startBrand > .startBrandText > .startBrandBtn > a {
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 100px 0 0;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .brand,
+  .brand:last-of-type {
+    flex-direction: column-reverse;
+    width: 550px;
+  }
+  .brandDesc > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .brandDesc > span {
+    flex: 1;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .brandDesc > span > h5 {
+    margin-bottom: 10px;
+  }
+  .brandDesc > span > h5,
+  .brandDesc > span > p {
+    text-align: center;
+  }
+  .startBrand {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .brand,
+  .brand:last-of-type {
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* .title {
+    font-size: 24px;
+  } */
+  .brand,
+  .brand:last-of-type {
+    width: 325px;
+  }
+}

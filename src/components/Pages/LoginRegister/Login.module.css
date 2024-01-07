@@ -1,0 +1,102 @@
+.section {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 375px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.msg {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+}
+.msg > a {
+  color: var(--color35);
+  font-weight: 500;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: var(--color35);
+}
+
+.input {
+  font-size: 20px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  height: 50px;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid var(--color35);
+  border-radius: 3px;
+  color: var(--color35);
+  outline-color: var(--color27);
+}
+
+.sign-in-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.sign-in {
+  padding: 10px 40px;
+  border-radius: 50px;
+  border: 0.5px solid var(--color35);
+  background-color: var(--color35);
+  color: #fff;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.2s;
+}
+
+.sign-in-btn .sign-in:hover {
+  cursor: pointer;
+  background-color: var(--color27);
+  color: var(--color35);
+  font-weight: 600;
+}
+
+.sign-in-btn .sign-in:active {
+  transform: scale(0.98);
+}
+
+.sign-in-btn .sign-up:active {
+  transform: scale(0.98);
+}
+
+.password-msg {
+  font-size: 13px;
+  margin-top: -20px;
+  text-align: right;
+  width: 100%;
+}

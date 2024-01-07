@@ -1,0 +1,161 @@
+.section {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 25px 30px;
+}
+
+.formContainer {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  border: 1px solid lightgrey;
+}
+
+.formHeading {
+  height: 60px;
+  background-color: var(--color6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color6);
+}
+
+.formHeadingTxt {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: stretch;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+.formEl {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 25px 50px;
+}
+
+.comment {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  position: relative;
+}
+
+.textarea {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  min-height: 120px;
+  outline: none;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.commentLength {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+}
+
+.label {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+.btnContainer {
+  max-width: 325px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.submitBtn {
+  border: none;
+  outline: none;
+  padding: 15px 40px;
+  background-color: var(--color27);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid var(--color27);
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color27);
+}
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 1100px) {
+  .formEl {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .formContainer {
+    width: 576px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .formEl {
+    padding: 25px 25px;
+  }
+
+  .textarea {
+    min-height: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 100px 0px;
+  }
+
+  .formContainer {
+    width: 400px;
+  }
+  .form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .textarea {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .formContainer {
+    width: 325px;
+  }
+}

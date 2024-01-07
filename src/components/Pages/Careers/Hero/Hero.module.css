@@ -1,0 +1,129 @@
+.section {
+  width: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../../../../resources/images/banner-bg-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  min-height: 400px;
+  height: 700px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 75px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.pageHeading {
+  text-align: center;
+  font-size: 130px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 208, 0),
+    rgb(255, 94, 0)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1200px) {
+  .pageTitle {
+    font-size: 60px;
+  }
+  .pageHeading {
+    font-size: 110px;
+  }
+}
+@media (max-width: 1024px) {
+  .pageTitle {
+    font-size: 50px;
+  }
+  .pageHeading {
+    font-size: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .pageHeading {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 840px) {
+  .pageTitle {
+    font-size: 45px;
+  }
+  .pageHeading {
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    height: 600px;
+  }
+  .pageTitle {
+    font-size: 35px;
+  }
+  .pageHeading {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    height: 500px;
+  }
+  .pageTitle {
+    font-size: 30px;
+  }
+  .pageHeading {
+    font-size: 65px;
+  }
+}
+@media (max-width: 576px) {
+  .section {
+    height: 400px;
+  }
+  .pageTitle {
+    letter-spacing: 0;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .pageHeading {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 425px) {
+  .pageTitle {
+    font-size: 22px;
+  }
+  .pageHeading {
+    font-size: 40px;
+  }
+}

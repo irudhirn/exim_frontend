@@ -1,0 +1,231 @@
+.section {
+  max-width: 1920px;
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("../../../../../resources/images/hero-bg-4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 500px;
+  height: 700px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.container {
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.textBox {
+  /* transform: translateY(-100px); */
+  z-index: 50;
+}
+
+.title {
+  font-size: 66px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 50;
+}
+
+.desc {
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 50;
+}
+
+/* .descText {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(125, 213, 111, 0.85),
+    rgba(40, 180, 135, 0.85)
+  );
+  padding: 10px 15px;
+  line-height: 1.5;
+} */
+
+/* .imgBox {
+  position: relative;
+} */
+
+.img {
+  position: absolute;
+  z-index: 60;
+}
+
+.bowlImg {
+  /* transform: scale(2); */
+  /* width: 400px;
+  height: auto; */
+  left: 50px;
+  bottom: 0;
+}
+
+.bottlesImg {
+  right: 0;
+  bottom: 0;
+  height: 600px;
+  width: auto;
+}
+
+@media (max-width: 1300px) {
+  .bottlesImg {
+    height: 550px;
+    width: auto;
+  }
+}
+@media (max-width: 1200px) {
+  /* .section {
+    height: 600px;
+  } */
+  .title {
+    font-size: 58px;
+  }
+  .desc {
+    font-size: 24px;
+  }
+  .bottlesImg {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* .section {
+    height: 550px;
+  } */
+  .container {
+    padding: 50px 25px;
+  }
+  .title {
+    font-size: 46px;
+  }
+  .desc {
+    font-size: 22px;
+  }
+  .bottlesImg {
+    height: 600px;
+    width: auto;
+  }
+}
+
+@media (max-width: 840px) {
+  .section {
+    height: 600px;
+  }
+  .container {
+    padding: 50px 25px;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .desc {
+    font-size: 20px;
+  }
+  .bottlesImg {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    height: 600px;
+  }
+  .container {
+    padding: 50px 25px;
+  }
+  .title {
+    font-size: 34px;
+  }
+  .desc {
+    font-size: 20px;
+  }
+  .bottlesImg {
+    height: 450px;
+    width: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  /* .section {
+    height: 400px;
+  } */
+  .container {
+    padding: 50px 25px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .desc {
+    font-size: 18px;
+  }
+  .bottlesImg {
+    bottom: 50px;
+    height: 400px;
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    height: 500px;
+  }
+  .container {
+    padding: 50px 25px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .bottlesImg {
+    bottom: 50px;
+    height: 300px;
+    width: auto;
+  }
+}
+
+@media (max-width: 476px) {
+  .bottlesImg {
+    bottom: 20px;
+    height: 250px;
+    width: auto;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

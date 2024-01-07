@@ -1,0 +1,71 @@
+.section {
+  width: 300px;
+  /* border: 1px solid red; */
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 100%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color35);
+  margin-bottom: 15px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+
+.imgBox {
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.imgBox > a {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  /* text-align: right; */
+}
+
+.img {
+  height: 100%;
+  width: auto;
+}
+
+.textBox > a {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  /* color: var(--color35); */
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.textBox > a:hover {
+  color: var(--color27);
+}

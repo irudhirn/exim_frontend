@@ -1,0 +1,101 @@
+.jobContainer {
+  border: 0.5px solid #999;
+  padding: 15px 15px;
+}
+.jobContainer:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.jobName {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color35);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chevron {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  color: #000;
+  border: none;
+  /* border: 1px solid red; */
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.jobDetails.inactive {
+  display: none;
+}
+
+.jobDetails {
+  margin-top: 5px;
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.descHeading {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.descriptions {
+  margin-bottom: 15px;
+}
+
+.descrptionText {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  /* margin-bottom: 10px; */
+  line-height: 1.75;
+}
+
+.reqHeading {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.requirementText {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .jobName {
+    font-size: 17px;
+  }
+  .chevron {
+    font-size: 17px;
+  }
+}

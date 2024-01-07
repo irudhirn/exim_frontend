@@ -1,0 +1,60 @@
+.section {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1635870224035-9a2b50dfda09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pageTitle {
+  text-align: center;
+  font-size: 46px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    height: 600px;
+  }
+  .pageTitle {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    height: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    height: 500px;
+  }
+  .pageTitle {
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 425px) {
+  .pageTitle {
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
